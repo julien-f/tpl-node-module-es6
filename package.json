@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "name": "",
+  "version": "0.0.0",
+  "license": "ISC",
+  "description": "",
+  "keywords": [],
+  "homepage": "",
+  "bugs": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": {
+    "name": "Julien Fontanet",
+    "email": "julien.fontanet@isonoe.net"
+  },
+  "preferGlobal": false,
+  "main": "dist/",
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+    "babel-runtime": "*"
+  },
+  "devDependencies": {
+    "babel": "*",
+    "mocha": "*",
+    "must": "*"
+  },
+  "scripts": {
+    "build": "mkdir --parents dist && babel --optional=runtime --compact=true --source-maps --out-dir=dist/ src/",
+    "dev": "mkdir --parents dist && babel --watch --optional=runtime --compact=true --source-maps --out-dir=dist/ src/",
+    "prepublish": "npm build",
+    "test": "mocha 'dist/**/*.spec.js'",
+    "test-dev": "mocha --watch --reporter=min 'dist/**/*.spec.js'"
+  }
+}
