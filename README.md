@@ -43,7 +43,7 @@ the code.
 
 You may:
 
-- report any [issue](https://github.com/julien-f/js-make-error/issues)
+- report any [issue](${pkg.bugs})
   you've encountered;
 - fork and create a pull request.
 
