@@ -1,9 +1,9 @@
 /* eslint-env mocha */
 
-import myLib from './';
+import myLib from './'
 
-import expect from 'must';
+import expect from 'must'
 
 // ===================================================================
 
-describe('myLib');
+describe('myLib')
