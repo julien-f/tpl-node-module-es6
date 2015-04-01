@@ -21,10 +21,10 @@
     "dist/"
   ],
   "dependencies": {
-    "babel-runtime": "*"
+    "babel-runtime": "^4"
   },
   "devDependencies": {
-    "babel": "*",
+    "babel": "^4",
     "mocha": "*",
     "must": "*",
     "standard": "*"
