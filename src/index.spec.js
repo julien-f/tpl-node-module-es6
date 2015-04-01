@@ -1,3 +1,5 @@
+/* eslint-env mocha */
+
 import myLib from './';
 
 import expect from 'must';
