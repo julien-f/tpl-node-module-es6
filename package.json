@@ -27,6 +27,7 @@
     "babel": "^5",
     "mocha": "*",
     "must": "*",
+    "source-map-support": "*",
     "standard": "*"
   },
   "scripts": {
