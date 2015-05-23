@@ -25,17 +25,18 @@
   },
   "devDependencies": {
     "babel": "^5",
+    "babel-standard": "*",
     "mocha": "*",
     "must": "*",
-    "source-map-support": "*",
-    "babel-standard": "*"
+    "source-map-support": "*"
   },
   "scripts": {
     "build": "mkdir -p dist && babel --optional=runtime --compact=true --source-maps --out-dir=dist/ src/",
     "dev": "mkdir -p dist && babel --watch --optional=runtime --source-maps --out-dir=dist/ src/",
+    "lint": "babel-standard",
     "prepublish": "npm run build",
-    "test": "standard && mocha --require source-map-support/register 'dist/**/*.spec.js'",
-    "test-dev": "standard && mocha --require source-map-support/register --watch --reporter=min 'dist/**/*.spec.js'"
+    "test": "mocha --require source-map-support/register 'dist/**/*.spec.js'",
+    "test-dev": "mocha --require source-map-support/register --watch --reporter=min 'dist/**/*.spec.js'"
   },
   "standard": {
     "ignore": [
