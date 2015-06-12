@@ -10,8 +10,5 @@
     "es7.decorators",
     "es7.functionBind",
     "runtime"
-  ],
-  "plugins": [
-    "closure-elimination"
   ]
 }
