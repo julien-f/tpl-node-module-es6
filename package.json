@@ -31,6 +31,7 @@
     "mocha": "^2.3.3",
     "must": "^0.13.1",
     "source-map-support": "^0.3.2",
+    "nyc": "^3.2.2",
     "standard": "^5.3.1",
     "trace": "^2.0.0"
   },
@@ -39,7 +40,7 @@
     "dev": "babel --watch --source-maps --out-dir=dist/ src/",
     "lint": "standard",
     "prepublish": "npm run build",
-    "test": "mocha --opts .mocha.opts \"dist/**/*.spec.js\"",
+    "test": "nyc mocha --opts .mocha.opts \"dist/**/*.spec.js\"",
     "posttest": "npm run lint",
     "test-dev": "mocha --opts .mocha.opts --watch --reporter=min \"dist/**/*.spec.js\""
   },
