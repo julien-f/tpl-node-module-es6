@@ -21,6 +21,9 @@
   "files": [
     "dist/"
   ],
+  "engines": {
+    "node": ">=0.12"
+  },
   "dependencies": {
     "babel-runtime": "^5.8.34"
   },
@@ -39,12 +42,12 @@
   "scripts": {
     "build": "babel --source-maps --out-dir=dist/ src/",
     "dev": "babel --watch --source-maps --out-dir=dist/ src/",
+    "dev-test": "mocha --opts .mocha.opts --watch --reporter=min \"dist/**/*.spec.js\"",
     "lint": "standard",
     "depcheck": "dependency-check ./package.json",
     "posttest": "npm run lint && npm run depcheck",
     "prepublish": "npm run build",
-    "test": "nyc mocha --opts .mocha.opts \"dist/**/*.spec.js\"",
-    "test-dev": "mocha --opts .mocha.opts --watch --reporter=min \"dist/**/*.spec.js\""
+    "test": "nyc mocha --opts .mocha.opts \"dist/**/*.spec.js\""
   },
   "standard": {
     "ignore": [
