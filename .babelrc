@@ -1,13 +1,14 @@
 {
  "comments": false,
  "compact": true,
- "presets": [
+ "plugins": [
     // Async functions compiled without generators.
     //
     // Poorer perf than native generators but better than emulation
     // and no need for runtime!
-    "kneden",
-
+    "kneden"
+  ],
+ "presets": [
     "stage-0",
     "es2015"
  ]
