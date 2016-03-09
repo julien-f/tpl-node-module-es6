@@ -49,6 +49,17 @@
     "prepublish": "npm run build",
     "test": "nyc mocha --opts .mocha.opts \"dist/**/*.spec.js\""
   },
+  "babel": {
+    "comments": false,
+    "compact": true,
+    "plugins": [
+      "kneden"
+    ],
+    "presets": [
+      "stage-0",
+      "es2015"
+    ]
+  },
   "standard": {
     "ignore": [
       "dist/**"
