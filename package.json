@@ -34,13 +34,13 @@
     "kneden": "^1.0.2",
     "mocha": "^2.4.5",
     "must": "^0.13.1",
-    "nyc": "^6.0.0",
+    "nyc": "^6.1.1",
     "source-map-support": "^0.4.0",
-    "standard": "^6.0.7",
+    "standard": "^6.0.8",
     "trace": "^2.3.0"
   },
   "scripts": {
-    "build": "babel --source-maps --out-dir=dist/ src/",
+    "build": "NODE_ENV=production babel --source-maps --out-dir=dist/ src/",
     "depcheck": "dependency-check ./package.json",
     "dev": "babel --watch --source-maps --out-dir=dist/ src/",
     "dev-test": "mocha --opts .mocha.opts --watch --reporter=min \"dist/**/*.spec.js\"",
