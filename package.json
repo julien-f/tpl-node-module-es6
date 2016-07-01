@@ -26,19 +26,18 @@
   },
   "devDependencies": {
     "babel-cli": "^6.10.1",
-    "babel-eslint": "^6.0.4",
-    "babel-plugin-async-to-promises": "^1.0.5",
+    "babel-eslint": "^6.1.0",
     "babel-preset-es2015": "^6.9.0",
-    "babel-preset-stage-0": "^6.5.0",
-    "clarify": "^1.0.5",
+    "babel-preset-stage-0-promises": "^1.1.0",
+    "clarify": "^2.0.0",
     "dependency-check": "^2.5.1",
-    "ghooks": "^1.2.3",
+    "ghooks": "^1.2.4",
     "mocha": "^2.5.3",
     "must": "^0.13.1",
-    "nyc": "^6.4.4",
-    "source-map-support": "^0.4.0",
+    "nyc": "^6.6.1",
+    "source-map-support": "^0.4.1",
     "standard": "^7.1.2",
-    "trace": "^2.3.0"
+    "trace": "^2.3.2"
   },
   "scripts": {
     "build": "NODE_ENV=production babel --source-maps --out-dir=dist/ src/",
@@ -51,11 +50,8 @@
     "test": "nyc mocha --opts .mocha.opts \"dist/**/*.spec.js\""
   },
   "babel": {
-    "plugins": [
-      "async-to-promises"
-    ],
     "presets": [
-      "stage-0",
+      "stage-0-promises",
       "es2015"
     ]
   },
