@@ -28,6 +28,7 @@
   "devDependencies": {
     "babel-cli": "^6.16.0",
     "babel-eslint": "^7.0.0",
+    "babel-plugin-lodash": "^3.2.9",
     "babel-preset-babili": "0.0.3",
     "babel-preset-es2015": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
@@ -58,6 +59,9 @@
         ]
       }
     },
+    "plugins": [
+      "lodash"
+    ],
     "presets": [
       "es2015",
       "stage-0"
