@@ -18,19 +18,22 @@ Installation of the [npm package](https://npmjs.org/package/${pkg.name}):
 
 ```
 # Install dependencies
-> npm install
+> yarn
 
 # Run the tests
-> npm test
+> yarn test
 
 # Continuously compile
-> npm run dev
+> yarn dev
 
 # Continuously run the tests
-> npm run dev-test
+> yarn dev-test
 
 # Build for production (automatically called by npm install)
-> npm run build
+> yarn build
+
+# Commit changes
+> yarn cz
 ```
 
 ## Contributions
