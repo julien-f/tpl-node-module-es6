@@ -479,6 +479,10 @@ babel-plugin-syntax-exponentiation-operator@7.0.0-beta.0:
   version "7.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-exponentiation-operator/-/babel-plugin-syntax-exponentiation-operator-7.0.0-beta.0.tgz#0e09f65168b7dd2cc73ad7af547036ff128eb7d6"
 
+babel-plugin-syntax-flow@7.0.0-beta.0:
+  version "7.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-flow/-/babel-plugin-syntax-flow-7.0.0-beta.0.tgz#174a16f47f53eba83b555018ee15fe4d2b172e2a"
+
 babel-plugin-syntax-object-rest-spread@7.0.0-beta.0:
   version "7.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-object-rest-spread/-/babel-plugin-syntax-object-rest-spread-7.0.0-beta.0.tgz#34a1eee484acfb0a89effc364e386a8d769286eb"
@@ -658,6 +662,12 @@ babel-plugin-transform-exponentiation-operator@7.0.0-beta.0:
     babel-helper-builder-binary-assignment-operator-visitor "7.0.0-beta.0"
     babel-plugin-syntax-exponentiation-operator "7.0.0-beta.0"
 
+babel-plugin-transform-flow-strip-types@7.0.0-beta.0:
+  version "7.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-flow-strip-types/-/babel-plugin-transform-flow-strip-types-7.0.0-beta.0.tgz#71681614e1e55e3dcfb50d7eb510bd1e81f25ab8"
+  dependencies:
+    babel-plugin-syntax-flow "7.0.0-beta.0"
+
 babel-plugin-transform-object-rest-spread@7.0.0-beta.0:
   version "7.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-object-rest-spread/-/babel-plugin-transform-object-rest-spread-7.0.0-beta.0.tgz#51b6cabe5b55dc63d4fe0287b3df23a7691b11d4"
@@ -730,6 +740,12 @@ babel-preset-env@^2.0.0-beta.0:
     browserslist "^2.4.0"
     invariant "^2.2.2"
     semver "^5.3.0"
+
+babel-preset-flow@^7.0.0-beta.0:
+  version "7.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/babel-preset-flow/-/babel-preset-flow-7.0.0-beta.0.tgz#0ef44644ac86da81d698a5d143a00d0514d5a362"
+  dependencies:
+    babel-plugin-transform-flow-strip-types "7.0.0-beta.0"
 
 babel-preset-jest@^21.0.2:
   version "21.0.2"
@@ -1757,6 +1773,10 @@ flat-cache@^1.2.1:
     del "^2.0.2"
     graceful-fs "^4.1.2"
     write "^0.2.1"
+
+flow-bin@^0.54.1:
+  version "0.54.1"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.54.1.tgz#7101bcccf006dc0652714a8aef0c72078a760510"
 
 for-each@~0.3.2:
   version "0.3.2"

@@ -17,6 +17,7 @@ module.exports = {
         useBuiltIns: 'usage'
       }
     ],
+    'flow',
     'stage-3'
   ]
 }
