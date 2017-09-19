@@ -16,6 +16,7 @@ module.exports = {
         },
         useBuiltIns: 'usage'
       }
-    ]
+    ],
+    'stage-3'
   ]
 }

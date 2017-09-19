@@ -370,6 +370,14 @@ babel-helper-regex@7.0.0-beta.0:
     babel-types "7.0.0-beta.0"
     lodash "^4.2.0"
 
+babel-helper-regex@^6.26.0:
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/babel-helper-regex/-/babel-helper-regex-6.26.0.tgz#325c59f902f82f24b74faceed0363954f6495e72"
+  dependencies:
+    babel-runtime "^6.26.0"
+    babel-types "^6.26.0"
+    lodash "^4.17.4"
+
 babel-helper-remap-async-to-generator@7.0.0-beta.0:
   version "7.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/babel-helper-remap-async-to-generator/-/babel-helper-remap-async-to-generator-7.0.0-beta.0.tgz#3560b8ba63f42bf3bfbcb0541a840f1acc47c856"
@@ -455,13 +463,40 @@ babel-plugin-syntax-async-functions@7.0.0-beta.0:
   version "7.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-async-functions/-/babel-plugin-syntax-async-functions-7.0.0-beta.0.tgz#2d4074c6167cc78e0bdc49de65902f90e09b59de"
 
+babel-plugin-syntax-async-generators@7.0.0-beta.0:
+  version "7.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-async-generators/-/babel-plugin-syntax-async-generators-7.0.0-beta.0.tgz#a89061e968d4f4c2ee2f8a5b9c84eed19ec48488"
+
+babel-plugin-syntax-class-properties@7.0.0-beta.0:
+  version "7.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-class-properties/-/babel-plugin-syntax-class-properties-7.0.0-beta.0.tgz#5c666cbbaf4776c8895fe1415b8ea8cb117cf469"
+
+babel-plugin-syntax-dynamic-import@7.0.0-beta.0:
+  version "7.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-dynamic-import/-/babel-plugin-syntax-dynamic-import-7.0.0-beta.0.tgz#3ba4f629948d1427bb9a520ebe102c990bcd8b14"
+
 babel-plugin-syntax-exponentiation-operator@7.0.0-beta.0:
   version "7.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-exponentiation-operator/-/babel-plugin-syntax-exponentiation-operator-7.0.0-beta.0.tgz#0e09f65168b7dd2cc73ad7af547036ff128eb7d6"
 
+babel-plugin-syntax-object-rest-spread@7.0.0-beta.0:
+  version "7.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-object-rest-spread/-/babel-plugin-syntax-object-rest-spread-7.0.0-beta.0.tgz#34a1eee484acfb0a89effc364e386a8d769286eb"
+
+babel-plugin-syntax-optional-catch-binding@7.0.0-beta.0:
+  version "7.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-optional-catch-binding/-/babel-plugin-syntax-optional-catch-binding-7.0.0-beta.0.tgz#9c92545c42865954c544f480648e179ba15757fb"
+
 babel-plugin-syntax-trailing-function-commas@7.0.0-beta.0:
   version "7.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-trailing-function-commas/-/babel-plugin-syntax-trailing-function-commas-7.0.0-beta.0.tgz#aa213c1435e2bffeb6fca842287ef534ad05d5cf"
+
+babel-plugin-transform-async-generator-functions@7.0.0-beta.0:
+  version "7.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-async-generator-functions/-/babel-plugin-transform-async-generator-functions-7.0.0-beta.0.tgz#df506a7b90fe7a707f8ca8f309435df6b651ccf4"
+  dependencies:
+    babel-helper-remap-async-to-generator "7.0.0-beta.0"
+    babel-plugin-syntax-async-generators "7.0.0-beta.0"
 
 babel-plugin-transform-async-to-generator@7.0.0-beta.0:
   version "7.0.0-beta.0"
@@ -469,6 +504,14 @@ babel-plugin-transform-async-to-generator@7.0.0-beta.0:
   dependencies:
     babel-helper-remap-async-to-generator "7.0.0-beta.0"
     babel-plugin-syntax-async-functions "7.0.0-beta.0"
+
+babel-plugin-transform-class-properties@7.0.0-beta.0:
+  version "7.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-class-properties/-/babel-plugin-transform-class-properties-7.0.0-beta.0.tgz#8ddce6f6e700c1036817d24703af6ff01e66d7a8"
+  dependencies:
+    babel-helper-function-name "7.0.0-beta.0"
+    babel-plugin-syntax-class-properties "7.0.0-beta.0"
+    babel-template "7.0.0-beta.0"
 
 babel-plugin-transform-es2015-arrow-functions@7.0.0-beta.0:
   version "7.0.0-beta.0"
@@ -615,6 +658,18 @@ babel-plugin-transform-exponentiation-operator@7.0.0-beta.0:
     babel-helper-builder-binary-assignment-operator-visitor "7.0.0-beta.0"
     babel-plugin-syntax-exponentiation-operator "7.0.0-beta.0"
 
+babel-plugin-transform-object-rest-spread@7.0.0-beta.0:
+  version "7.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-object-rest-spread/-/babel-plugin-transform-object-rest-spread-7.0.0-beta.0.tgz#51b6cabe5b55dc63d4fe0287b3df23a7691b11d4"
+  dependencies:
+    babel-plugin-syntax-object-rest-spread "7.0.0-beta.0"
+
+babel-plugin-transform-optional-catch-binding@7.0.0-beta.0:
+  version "7.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-optional-catch-binding/-/babel-plugin-transform-optional-catch-binding-7.0.0-beta.0.tgz#363bcd26e133dd28ba1eb9b2680d1bf99c250294"
+  dependencies:
+    babel-plugin-syntax-optional-catch-binding "7.0.0-beta.0"
+
 babel-plugin-transform-regenerator@7.0.0-beta.0:
   version "7.0.0-beta.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-regenerator/-/babel-plugin-transform-regenerator-7.0.0-beta.0.tgz#c136133db7e862d7999f3e1fc335494244365285"
@@ -626,6 +681,13 @@ babel-plugin-transform-strict-mode@7.0.0-beta.0:
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-strict-mode/-/babel-plugin-transform-strict-mode-7.0.0-beta.0.tgz#61838503aef31aeeff679c42b88ca514dba080c3"
   dependencies:
     babel-types "7.0.0-beta.0"
+
+babel-plugin-transform-unicode-property-regex@^2.0.2:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-unicode-property-regex/-/babel-plugin-transform-unicode-property-regex-2.0.5.tgz#24922190f9598384d258a6c8e7409309dc6f3898"
+  dependencies:
+    babel-helper-regex "^6.26.0"
+    regexpu-core "^4.1.3"
 
 babel-polyfill@7.0.0-beta.0:
   version "7.0.0-beta.0"
@@ -674,6 +736,17 @@ babel-preset-jest@^21.0.2:
   resolved "https://registry.yarnpkg.com/babel-preset-jest/-/babel-preset-jest-21.0.2.tgz#9db25def2329f49eace3f5ea0de42a0b898d12cc"
   dependencies:
     babel-plugin-jest-hoist "^21.0.2"
+
+babel-preset-stage-3@^7.0.0-beta.0:
+  version "7.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/babel-preset-stage-3/-/babel-preset-stage-3-7.0.0-beta.0.tgz#16b3bfd4349f679012af92f20436af371ad3de0d"
+  dependencies:
+    babel-plugin-syntax-dynamic-import "7.0.0-beta.0"
+    babel-plugin-transform-async-generator-functions "7.0.0-beta.0"
+    babel-plugin-transform-class-properties "7.0.0-beta.0"
+    babel-plugin-transform-object-rest-spread "7.0.0-beta.0"
+    babel-plugin-transform-optional-catch-binding "7.0.0-beta.0"
+    babel-plugin-transform-unicode-property-regex "^2.0.2"
 
 babel-register@7.0.0-beta.0:
   version "7.0.0-beta.0"
@@ -3342,7 +3415,7 @@ regex-cache@^0.4.2:
   dependencies:
     is-equal-shallow "^0.1.3"
 
-regexpu-core@^4.0.2:
+regexpu-core@^4.0.2, regexpu-core@^4.1.3:
   version "4.1.3"
   resolved "https://registry.yarnpkg.com/regexpu-core/-/regexpu-core-4.1.3.tgz#fb81616dbbc2a917a7419b33f8379144f51eb8d0"
   dependencies:
