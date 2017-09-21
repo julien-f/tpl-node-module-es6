@@ -12,7 +12,7 @@ module.exports = {
         debug: NODE_ENV === 'development',
         loose: true,
         targets: {
-          node: process.env.NODE_ENV === 'production' ? '6' : 'current'
+          node: NODE_ENV === 'production' ? '6' : 'current'
         },
         useBuiltIns: 'usage'
       }
