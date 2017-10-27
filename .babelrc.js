@@ -4,7 +4,7 @@ const __PROD__ = NODE_ENV === 'production'
 module.exports = {
   comments: !__PROD__,
   compact: __PROD__,
-  ignore: NODE_ENV === 'test' ? undefined : ['*.spec.js'],
+  ignore: NODE_ENV === 'test' ? undefined : [ /\.spec\.js$/ ],
   plugins: ['lodash'],
   presets: [
     [
