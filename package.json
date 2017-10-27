@@ -24,16 +24,17 @@
   "engines": {
     "node": ">=6"
   },
-  "dependencies": {},
+  "dependencies": {
+    "babel-polyfill": "^7.0.0-beta.3"
+  },
   "devDependencies": {
     "babel-cli": "^7.0.0-beta.3",
     "babel-eslint": "^8.0.1",
     "babel-plugin-lodash": "^3.2.11",
-    "babel-polyfill": "^7.0.0-beta.3",
     "babel-preset-env": "^7.0.0-beta.3",
     "babel-preset-flow": "^7.0.0-beta.3",
     "commitizen": "^2.9.6",
-    "cross-env": "^5.1.0",
+    "cross-env": "^5.1.1",
     "cz-conventional-changelog": "^2.1.0",
     "dependency-check": "^2.9.1",
     "flow-bin": "^0.57.3",
@@ -51,7 +52,7 @@
     "posttest": "dependency-check ./package.json",
     "prebuild": "rimraf dist/",
     "predev": "npm run prebuild",
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "pretest": "standard --fix && flow status",
     "test": "jest"
   },
