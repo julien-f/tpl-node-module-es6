@@ -14,12 +14,15 @@ module.exports = {
         debug: !__TEST__,
         loose: true,
         shippedProposals: true,
-        targets: {
-          node: __PROD__ ? '6' : 'current'
-        },
-        useBuiltIns: 'usage'
-      }
+        targets: __PROD__
+          ? { node: 'current' }
+          : {
+            browsers: '2%',
+            node: '4',
+          },
+        useBuiltIns: 'usage',
+      },
     ],
-    '@babel/flow'
-  ]
+    '@babel/flow',
+  ],
 }
