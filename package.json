@@ -25,23 +25,29 @@
     "node": ">=6"
   },
   "dependencies": {
-    "babel-polyfill": "^7.0.0-beta.3"
+    "@babel/polyfill": "^7.0.0-beta.34"
   },
   "devDependencies": {
-    "babel-cli": "^7.0.0-beta.3",
-    "babel-eslint": "^8.0.1",
-    "babel-plugin-lodash": "^3.2.11",
-    "babel-preset-env": "^7.0.0-beta.3",
-    "babel-preset-flow": "^7.0.0-beta.3",
+    "@babel/cli": "^7.0.0-beta.34",
+    "@babel/core": "^7.0.0-beta.34",
+    "@babel/preset-env": "^7.0.0-beta.34",
+    "@babel/preset-flow": "^7.0.0-beta.34",
+    "babel-7-jest": "^21.3.2",
+    "babel-eslint": "^8.0.3",
+    "babel-plugin-lodash": "^3.3.2",
     "commitizen": "^2.9.6",
     "cross-env": "^5.1.1",
     "cz-conventional-changelog": "^2.1.0",
-    "dependency-check": "^2.9.1",
-    "flow-bin": "^0.57.3",
+    "eslint": "^4.13.1",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "flow-bin": "^0.61.0",
     "husky": "^0.14.3",
-    "jest": "^21.2.1",
-    "rimraf": "^2.6.2",
-    "standard": "^10.0.3"
+    "jest": "^21.3.0-beta.14",
+    "rimraf": "^2.6.2"
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production babel --source-maps --out-dir=dist/ src/",
@@ -49,12 +55,12 @@
     "cz": "git-cz",
     "dev": "cross-env NODE_ENV=development babel --watch --source-maps --out-dir=dist/ src/",
     "dev-test": "jest --bail --watch",
-    "posttest": "dependency-check ./package.json",
+    "posttest": "jest",
     "prebuild": "rimraf dist/",
     "predev": "npm run prebuild",
     "prepublishOnly": "npm run build",
-    "pretest": "standard --fix && flow status",
-    "test": "jest"
+    "pretest": "eslint --ignore-path .gitignore --fix .",
+    "test": "flow status"
   },
   "config": {
     "commitizen": {
@@ -62,16 +68,14 @@
     }
   },
   "jest": {
+    "collectCoverage": true,
     "testEnvironment": "node",
+    "transform": {
+      "\\.jsx?": "babel-7-jest"
+    },
     "roots": [
       "<rootDir>/src"
     ],
     "testRegex": "\\.spec\\.js$"
-  },
-  "standard": {
-    "ignore": [
-      "dist"
-    ],
-    "parser": "babel-eslint"
   }
 }
