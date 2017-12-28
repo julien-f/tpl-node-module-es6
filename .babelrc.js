@@ -15,11 +15,11 @@ module.exports = {
         loose: true,
         shippedProposals: true,
         targets: __PROD__
-          ? { node: 'current' }
-          : {
-            browsers: '2%',
+          ? {
+            browsers: '>2%',
             node: '4',
-          },
+          }
+          : { node: 'current' },
         useBuiltIns: 'usage',
       },
     ],
