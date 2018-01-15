@@ -31,9 +31,6 @@ Installation of the [npm package](https://npmjs.org/package/${pkg.name}):
 
 # Build for production (automatically called by npm install)
 > yarn build
-
-# Commit changes
-> yarn cz
 ```
 
 ## Contributions
