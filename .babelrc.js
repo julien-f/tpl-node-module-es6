@@ -1,19 +1,19 @@
 'use strict'
 
-const pkg = require('./package')
-
 const NODE_ENV = process.env.NODE_ENV || 'development'
 const __PROD__ = NODE_ENV === 'production'
 const __TEST__ = NODE_ENV === 'test'
 
+const pkg = require('./package')
+
+const targets = {}
 let nodeCompat = (pkg.engines || {}).node
-if (nodeCompat === undefined) {
-  nodeCompat = '6'
-} else {
+if (nodeCompat !== undefined) {
   const trimChars = '^=>~'
   while (trimChars.includes(nodeCompat[0])) {
     nodeCompat = nodeCompat.slice(1)
   }
+  targets.node = nodeCompat
 }
 
 module.exports = {
@@ -28,11 +28,8 @@ module.exports = {
         loose: true,
         shippedProposals: true,
         targets: __PROD__
-          ? {
-            browsers: '>2%',
-            node: nodeCompat,
-          }
-          : { node: 'current' },
+          ? targets
+          : { browsers: '', node: 'current' },
         useBuiltIns: '@babel/polyfill' in (pkg.dependencies || {}) && 'usage',
       },
     ],

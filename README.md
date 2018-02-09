@@ -29,7 +29,7 @@ Installation of the [npm package](https://npmjs.org/package/${pkg.name}):
 # Continuously run the tests
 > yarn dev-test
 
-# Build for production (automatically called by npm install)
+# Build for production
 > yarn build
 ```
 
